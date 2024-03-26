@@ -11,7 +11,19 @@ void countingSort(vector<unsigned char>& arr, int exp) {
 
 // Binarni Radix sort
 void binaryRadixSort(vector<unsigned char>& arr) {
+    // Največji element
+    unsigned char max = arr[0];
+    for (int i = 1; i < arr.size(); i++) {
+        if (arr[i] > max)
+            max = arr[i];
+    }
 
+    // Število bitov za največji element
+    int bits = 8; // Ker so števila 8-bitna
+
+    // Izvajanje counting sorta za vsak bit
+    for (int exp = 0; exp < bits; exp++)
+        countingSort(arr, exp);
 }
 
 int main(int argc, char* argv[]) {
