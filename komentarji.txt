@@ -10,3 +10,18 @@
 # Zapre izhodno datoteko.
 # Izhodna sporočila potrdijo, da je sortiranje uspešno zaključeno in rezultat zapisan v "out.txt".
 # Vrne normalni izhod, kar označuje uspešen zaključek programa.
+
+
+# Counting sort za sortiranje po bitih
+# Ta funkcija izvede counting sort, da uredi vhodni vektor števil po določenem bitu (exp).
+# Vhodni argumenti:
+# - arr: Vektor 8-bitnih števil, ki ga želimo urediti.
+# - exp: Število, ki predstavlja indeks bita, po katerem želimo sortirati števila.
+
+# Binarni Radix sort
+# Ta funkcija izvede binarni Radix sort, ki sortira vhodni vektor števil po vseh bitih.
+# Vhodni argument:
+# - arr: Vektor 8-bitnih števil, ki ga želimo urediti.
+# Funkcija izvede Counting sort za vsak bit v številu bitov (8-bitna števila).
+# Ta postopek razvrščanja se izvede za vsak bit od najmanj pomembnega do najbolj pomembnega.
+
