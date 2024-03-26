@@ -1,0 +1,12 @@
+# Funkcija main
+
+# Preveri, ali je bilo podano pravilno število argumentov. Če ne, izpiše uporabo programa in vrne nenormalni izhod.
+# Odpri vhodno datoteko, ki je podana kot prvi argument programa. Če datoteke ni mogoče odpreti, izpiše napako in vrne nenormalni izhod.
+# Preberi vhodne podatke iz datoteke in jih shranite v vektor unsigned char.
+# Zapri vhodno datoteko.
+# Izvedi binarni Radix sort na vhodnih podatkih, shranjenih v vektorju.
+# Odpre izhodno datoteko "out.txt". Če datoteke ni mogoče ustvariti, izpiše napako in vrne nenormalni izhod.
+# Zapiše sortirane številke iz vektorja v izhodno datoteko, ločene s presledki.
+# Zapre izhodno datoteko.
+# Izhodna sporočila potrdijo, da je sortiranje uspešno zaključeno in rezultat zapisan v "out.txt".
+# Vrne normalni izhod, kar označuje uspešen zaključek programa.
