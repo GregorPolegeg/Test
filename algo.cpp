@@ -6,7 +6,25 @@ using namespace std;
 
 // Counting sort za sortiranje po bitih
 void countingSort(vector<unsigned char>& arr, int exp) {
+    vector<unsigned char> output(arr.size());
+    vector<int> count(2, 0);
 
+    // Štetje števil v trenutnem bitu
+    for (int i = 0; i < arr.size(); i++)
+        count[(arr[i] >> exp) & 1]++;
+
+    // Kumulativno štetje
+    count[1] += count[0];
+
+    // Postavitev elementov v izhodni vektor glede na njihove bitne vrednosti
+    for (int i = arr.size() - 1; i >= 0; i--) {
+        output[count[(arr[i] >> exp) & 1] - 1] = arr[i];
+        count[(arr[i] >> exp) & 1]--;
+    }
+
+    // Kopiranje urejenih elementov nazaj v izvorni vektor
+    for (int i = 0; i < arr.size(); i++)
+        arr[i] = output[i];
 }
 
 // Binarni Radix sort
